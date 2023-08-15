@@ -14,13 +14,10 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module">
-      const tagName = "h1";
-      const propsElement = {
-        className: "greeting",
-        children: "My first React code",
-      };
-      const element = React.createElement(tagName, propsElement); //create a React element using the React.createElement() function.
+    <script type="text/babel">
+      const element = (
+        <h1 className="greeting">my first JSX code using react</h1>
+      );
       ReactDOM.render(element, document.getElementById("root"));
     </script>
   </body>
